@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULTRA Gaming Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="video-bg">
+        </div>
+
+    <header>
+        <h1 class="logo">ULTRA<span>HUB</span></h1>
+    </header>
+
+    <main class="game-grid">
+        <div class="card" onclick="playGame('subway')">
+            <div class="inner-card">
+                <img src="assets/subway.jpg" alt="Subway Surfers">
+                <div class="info">
+                    <h3>Subway Surfers</h3>
+                    <p>Run & Dodge</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="playGame('temple')">
+            <div class="inner-card">
+                <img src="assets/temple.jpg" alt="Temple Run">
+                <div class="info">
+                    <h3>Temple Run</h3>
+                    <p>Escape the Demon</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="playGame('cs')">
+            <div class="inner-card">
+                <img src="assets/cs.jpg" alt="Counter Strike">
+                <div class="info">
+                    <h3>Counter Strike 3D</h3>
+                    <p>Tactical Shooter</p>
+                </div>
+            </div>
+        </div>
+
+        </main>
+
+    <div id="game-container" class="hidden">
+        <button class="close-btn" onclick="closeGame()">CLOSE ×</button>
+        <iframe id="game-frame" src=""></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
